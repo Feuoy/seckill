@@ -1,3 +1,4 @@
+<!--
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -12,17 +13,17 @@
 
     <dependencies>
         <dependency>
-            <!--单元测试-->
+            &lt;!&ndash;单元测试&ndash;&gt;
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <!--      <version>3.8.1</version>-->
+            &lt;!&ndash;      <version>3.8.1</version>&ndash;&gt;
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
 
 
-        <!--补全依赖-->
-        <!--日志 使用slf4j+logback-->
+        &lt;!&ndash;补全依赖&ndash;&gt;
+        &lt;!&ndash;日志 使用slf4j+logback&ndash;&gt;
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -40,15 +41,15 @@
         </dependency>
 
 
-        <!--数据库依赖-->
+        &lt;!&ndash;数据库依赖&ndash;&gt;
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <!--      <version>5.1.35</version>-->
+            &lt;!&ndash;      <version>5.1.35</version>&ndash;&gt;
             <version>8.0.17</version>
-            <scope>runtime</scope><!--生命周期，运行时加载-->
+            <scope>runtime</scope>&lt;!&ndash;生命周期，运行时加载&ndash;&gt;
         </dependency>
-        <!--JDBC连接池-->
+        &lt;!&ndash;JDBC连接池&ndash;&gt;
         <dependency>
             <groupId>c3p0</groupId>
             <artifactId>c3p0</artifactId>
@@ -56,7 +57,7 @@
         </dependency>
 
 
-        <!--DAO层：mybatis依赖-->
+        &lt;!&ndash;DAO层：mybatis依赖&ndash;&gt;
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -69,8 +70,8 @@
         </dependency>
 
 
-        <!--servlet web 依赖-->
-        <!--JSP-->
+        &lt;!&ndash;servlet web 依赖&ndash;&gt;
+        &lt;!&ndash;JSP&ndash;&gt;
         <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
@@ -83,8 +84,8 @@
         </dependency>
 
 
-        <!--servlet-->
-        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        &lt;!&ndash;servlet&ndash;&gt;
+        &lt;!&ndash; https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api &ndash;&gt;
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -95,17 +96,17 @@
 
 
 
-        <!--XML-->
-		<dependency>
+        &lt;!&ndash;XML&ndash;&gt;
+        <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-			<!-- 上传github时，提示更新依赖版本 -->
-            <!-- <version>2.5.4</version> -->
-			<version>2.9.10.4</version>
+            &lt;!&ndash; 上传github时，提示更新依赖版本 &ndash;&gt;
+            &lt;!&ndash; <version>2.5.4</version> &ndash;&gt;
+            <version>2.9.10.4</version>
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava-collections -->
+        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.guava/guava-collections &ndash;&gt;
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava-collections</artifactId>
@@ -113,50 +114,50 @@
         </dependency>
 
 
-        <!--spring依赖-->
-        <!--核心依赖-->
+        &lt;!&ndash;spring依赖&ndash;&gt;
+        &lt;!&ndash;核心依赖&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>4.3.19.RELEASE</version>
         </dependency>
-        <!--Spring IOC依赖-->
+        &lt;!&ndash;Spring IOC依赖&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
             <version>4.3.19.RELEASE</version>
         </dependency>
-        <!--spring拓展依赖，包扫描-->
+        &lt;!&ndash;spring拓展依赖，包扫描&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>4.3.19.RELEASE</version>
         </dependency>
-        <!--Spring dao层依赖-->
+        &lt;!&ndash;Spring dao层依赖&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>4.3.19.RELEASE</version>
         </dependency>
-        <!--spring事物-->
+        &lt;!&ndash;spring事物&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
             <version>4.3.19.RELEASE</version>
         </dependency>
-        <!--spring web相关依赖-->
+        &lt;!&ndash;spring web相关依赖&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>4.3.19.RELEASE</version>
         </dependency>
-        <!--spring mvc-->
+        &lt;!&ndash;spring mvc&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>4.3.19.RELEASE</version>
         </dependency>
-        <!--spring test相关依赖-->
+        &lt;!&ndash;spring test相关依赖&ndash;&gt;
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -164,23 +165,23 @@
         </dependency>
 
 
-        <!--    &lt;!&ndash;引入java访问redis客户端：Jedis&ndash;&gt;-->
-        <!--    <dependency>-->
-        <!--      <groupId>redis.clients</groupId>-->
-        <!--      <artifactId>jedis</artifactId>-->
-        <!--      <version>2.9.0</version>-->
-        <!--    </dependency>-->
-        <!--    &lt;!&ndash;protostuff序列化依赖&ndash;&gt;-->
-        <!--    <dependency>-->
-        <!--      <groupId>com.dyuproject.protostuff</groupId>-->
-        <!--      <artifactId>protostuff-core</artifactId>-->
-        <!--      <version>1.0.8</version>-->
-        <!--    </dependency>-->
-        <!--    <dependency>-->
-        <!--      <groupId>com.dyuproject.protostuff</groupId>-->
-        <!--      <artifactId>protostuff-runtime</artifactId>-->
-        <!--      <version>1.0.8</version>-->
-        <!--    </dependency>-->
+        &lt;!&ndash;    &lt;!&ndash;引入java访问redis客户端：Jedis&ndash;&gt;&ndash;&gt;
+        &lt;!&ndash;    <dependency>&ndash;&gt;
+        &lt;!&ndash;      <groupId>redis.clients</groupId>&ndash;&gt;
+        &lt;!&ndash;      <artifactId>jedis</artifactId>&ndash;&gt;
+        &lt;!&ndash;      <version>2.9.0</version>&ndash;&gt;
+        &lt;!&ndash;    </dependency>&ndash;&gt;
+        &lt;!&ndash;    &lt;!&ndash;protostuff序列化依赖&ndash;&gt;&ndash;&gt;
+        &lt;!&ndash;    <dependency>&ndash;&gt;
+        &lt;!&ndash;      <groupId>com.dyuproject.protostuff</groupId>&ndash;&gt;
+        &lt;!&ndash;      <artifactId>protostuff-core</artifactId>&ndash;&gt;
+        &lt;!&ndash;      <version>1.0.8</version>&ndash;&gt;
+        &lt;!&ndash;    </dependency>&ndash;&gt;
+        &lt;!&ndash;    <dependency>&ndash;&gt;
+        &lt;!&ndash;      <groupId>com.dyuproject.protostuff</groupId>&ndash;&gt;
+        &lt;!&ndash;      <artifactId>protostuff-runtime</artifactId>&ndash;&gt;
+        &lt;!&ndash;      <version>1.0.8</version>&ndash;&gt;
+        &lt;!&ndash;    </dependency>&ndash;&gt;
 
 
     </dependencies>
@@ -198,3 +199,4 @@
         </plugins>
     </build>
 </project>
+-->
